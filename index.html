@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tutorial Lengkap Bootstrap 5 untuk Pemula</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="text-center">
+      <div class="container">
+        <div class="mb-2">
+          <span class="badge bg-dark">Tutorial</span>
+          <span class="badge bg-secondary">Bootstrap</span>
+        </div>
+        <h1>Tutorial Lengkap Bootstrap 5 untuk Pemula</h1>
+        <p>
+          Pelajari cara membuat website responsif dan modern dengan Bootstrap 5
+          framework yang paling populer
+        </p>
+        <div class="author-info justify-content-center">
+          <img src="ARKT.png" alt="Author Avatar" class="author-avatar" />
+          <div>
+            <strong>Arkan Ubaidillah Warman</strong><br />
+            <small>Published on 03 November 2025</small>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <h3 class="mb-3">Apa itu Bootstrap?</h3>
+          <p>
+            Bootstrap adalah framework front-end yang paling populer untuk
+            mengembangkan website responsif dan mobile-first. Dikembangkan oleh
+            Twitter pada tahun 2011, Bootstrap kini telah menjadi pilihan utama
+            developers di seluruh dunia.
+          </p>
+
+          <div class="tips-box mb-4">
+            💡 <strong>Tips:</strong> Bootstrap 5 tidak lagi menggunakan jQuery,
+            sehingga lebih ringan dan modern!
+          </div>
+
+          <h4>Keunggulan Bootstrap</h4>
+          <ul class="list-group mb-4">
+            <li class="list-group-item">
+              <strong>Responsive Design</strong> - Otomatis menyesuaikan dengan
+              berbagai ukuran layar
+            </li>
+            <li class="list-group-item">
+              <strong>Komponen Lengkap</strong> - Navbar, cards, modals, dan
+              masih banyak lagi
+            </li>
+            <li class="list-group-item">
+              <strong>Customizable</strong> - Mudah disesuaikan dengan kebutuhan
+              proyek
+            </li>
+            <li class="list-group-item">
+              <strong>Dokumentasi Bagus</strong> - Panduan lengkap dan contoh
+              code
+            </li>
+          </ul>
+
+          <h4>Perbandingan Versi Bootstrap</h4>
+          <table class="table table-bordered table-striped text-center">
+            <thead class="table-dark">
+              <tr>
+                <th>Versi</th>
+                <th>Tahun</th>
+                <th>Highlight Feature</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bootstrap 3</td>
+                <td>2013</td>
+                <td>Mobile-first approach</td>
+                <td><span class="badge bg-secondary">Legacy</span></td>
+              </tr>
+              <tr>
+                <td>Bootstrap 4</td>
+                <td>2018</td>
+                <td>Flexbox grid</td>
+                <td><span class="badge bg-warning text-dark">LTS</span></td>
+              </tr>
+              <tr>
+                <td>Bootstrap 5</td>
+                <td>2021</td>
+                <td>No jQuery, RTL support</td>
+                <td><span class="badge bg-success">Current</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="alert alert-success mt-4">
+            <h5>Kesimpulan</h5>
+            <p>
+              Bootstrap 5 adalah pilihan terbaik untuk memulai web development.
+              Dengan komponen lengkap dan dokumentasi yang baik, Anda bisa
+              membuat website profesional dengan cepat.
+            </p>
+            <p>
+              <strong>Mulai belajar sekarang dan buat website impianmu!</strong>
+            </p>
+          </div>
+
+          <div class="d-flex gap-2 my-3">
+            <button id="like-btn" class="btn btn-primary">👍 Like (125)</button>
+            <button id="comment-btn" class="btn btn-outline-secondary">
+              💬 Comment (23)
+            </button>
+            <button id="save-btn" class="btn btn-outline-success">
+              💾 Save
+            </button>
+            <button id="share-btn" class="btn btn-outline-dark">
+              🔗 Share
+            </button>
+          </div>
+
+          <div id="comment-section" class="mt-3" style="display: none">
+            <div class="mb-3">
+              <textarea
+                id="comment-input"
+                class="form-control"
+                rows="3"
+                placeholder="Tulis komentar Anda..."
+              ></textarea>
+            </div>
+            <button id="submit-comment" class="btn btn-primary btn-sm">
+              Kirim Komentar
+            </button>
+          </div>
+
+          <div id="comments-list" class="mt-3">
+            <!-- Komentar akan ditampilkan di sini -->
+          </div>
+
+          <div class="mt-3">
+            <a
+              href="https://getbootstrap.com/"
+              target="_blank"
+              class="badge bg-primary tag-badge"
+              >Bootstrap</a
+            >
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS"
+              target="_blank"
+              class="badge bg-info text-dark tag-badge"
+              >Web Design</a
+            >
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn"
+              target="_blank"
+              class="badge bg-warning text-dark tag-badge"
+              >Tutorial</a
+            >
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+              class="badge bg-success tag-badge"
+              >CSS</a
+            >
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+              target="_blank"
+              class="badge bg-danger tag-badge"
+              >Frontend</a
+            >
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <img
+                src="ARKT.png"
+                alt="Author Avatar"
+                class="rounded-circle bg-secondary mx-auto mb-2"
+                style="width: 80px; height: 80px"
+              />
+              <h6>Arkan Ubaidillah Warman</h6>
+              <p class="text-muted small">
+                Web Developer<br />Passionate about teaching web development and
+                creating awesome tutorials.
+              </p>
+              <a
+                href="https://github.com/ArkanUbaidillah"
+                target="_blank"
+                class="btn btn-primary btn-sm"
+                >Follow</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header bg-dark text-white">
+              📚 Related Articles
+            </div>
+            <div class="list-group list-group-flush">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+                target="_blank"
+                class="list-group-item list-group-item-action"
+              >
+                CSS Grid Tutorial <span class="badge bg-primary">New</span>
+              </a>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                target="_blank"
+                class="list-group-item list-group-item-action"
+              >
+                JavaScript ES6 Guide
+                <small class="text-muted">8 min read</small>
+              </a>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+                target="_blank"
+                class="list-group-item list-group-item-action"
+              >
+                Responsive Design Tips
+                <span class="badge bg-success">Popular</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>Informatika @ 2025</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const likeBtn = document.getElementById("like-btn");
+        const commentBtn = document.getElementById("comment-btn");
+        const saveBtn = document.getElementById("save-btn");
+        const commentSection = document.getElementById("comment-section");
+        const submitCommentBtn = document.getElementById("submit-comment");
+        const commentInput = document.getElementById("comment-input");
+        const commentsList = document.getElementById("comments-list");
+
+        let likeCount = 125;
+        let commentCount = 23;
+        let isLiked = false;
+        let isCommentVisible = false;
+        let isSaved = false;
+
+        // Like functionality
+        likeBtn.addEventListener("click", function () {
+          if (isLiked) {
+            likeCount--;
+            likeBtn.textContent = `👍 Like (${likeCount})`;
+            likeBtn.classList.remove("btn-success");
+            likeBtn.classList.add("btn-primary");
+          } else {
+            likeCount++;
+            likeBtn.textContent = `👍 Like (${likeCount})`;
+            likeBtn.classList.remove("btn-primary");
+            likeBtn.classList.add("btn-success");
+          }
+          isLiked = !isLiked;
+        });
+
+        // Comment toggle functionality
+        commentBtn.addEventListener("click", function () {
+          isCommentVisible = !isCommentVisible;
+          if (isCommentVisible) {
+            commentSection.style.display = "block";
+          } else {
+            commentSection.style.display = "none";
+          }
+        });
+
+        // Save functionality
+        saveBtn.addEventListener("click", function () {
+          if (isSaved) {
+            saveBtn.textContent = "💾 Save";
+            saveBtn.classList.remove("btn-success");
+            saveBtn.classList.add("btn-outline-success");
+            alert("Artikel dihapus dari bookmark!");
+          } else {
+            saveBtn.textContent = "💾 Saved";
+            saveBtn.classList.remove("btn-outline-success");
+            saveBtn.classList.add("btn-success");
+            alert("Artikel berhasil disimpan ke bookmark!");
+          }
+          isSaved = !isSaved;
+        });
+
+        // Share functionality
+        shareBtn.addEventListener("click", function () {
+          const pageTitle = document.title;
+          const pageUrl = window.location.href;
+          const shareText = `Baca artikel menarik: ${pageTitle}`;
+
+          if (navigator.share) {
+            // Use Web Share API if available
+            navigator.share({
+              title: pageTitle,
+              text: shareText,
+              url: pageUrl,
+            });
+          } else {
+            // Fallback to custom share options
+            const shareOptions = `
+              <div class="share-options" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3); z-index: 1000;">
+                <h5>Bagikan Artikel</h5>
+                <div class="d-flex gap-2 mt-3">
+                  <a href="https://wa.me/?text=${encodeURIComponent(
+                    shareText + " " + pageUrl
+                  )}" target="_blank" class="btn btn-success btn-sm">WhatsApp</a>
+                  <a href="https://www.instagram.com/" target="_blank" class="btn btn-danger btn-sm">Instagram</a>
+                  <a href="https://www.tiktok.com/" target="_blank" class="btn btn-dark btn-sm">TikTok</a>
+                  <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                    shareText
+                  )}&url=${encodeURIComponent(
+              pageUrl
+            )}" target="_blank" class="btn btn-info btn-sm">Twitter</a>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                    pageUrl
+                  )}" target="_blank" class="btn btn-primary btn-sm">Facebook</a>
+                </div>
+                <button onclick="this.parentElement.style.display='none'" class="btn btn-secondary btn-sm mt-2">Tutup</button>
+              </div>
+            `;
+            document.body.insertAdjacentHTML("beforeend", shareOptions);
+          }
+        });
+
+        // Submit comment functionality
+        submitCommentBtn.addEventListener("click", function () {
+          const commentText = commentInput.value.trim();
+          if (commentText !== "") {
+            commentCount++;
+            commentBtn.textContent = `💬 Comment (${commentCount})`;
+
+            const commentDiv = document.createElement("div");
+            commentDiv.className = "card mb-2";
+            commentDiv.innerHTML = `
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <img src="ARKT.png" alt="User Avatar" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                  <strong>You</strong>
+                  <small class="text-muted ms-auto">${new Date().toLocaleString()}</small>
+                </div>
+                <p class="mb-0">${commentText}</p>
+              </div>
+            `;
+
+            commentsList.appendChild(commentDiv);
+            commentInput.value = "";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
